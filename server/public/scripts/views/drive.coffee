@@ -122,7 +122,9 @@ define [
 
       @game = null
 
-      @socket = io.connect '/drive'
+      @socket = # io.connect '/drive'
+        emit: () -> return null
+        on: () -> return null
       # TODO: Just display a simple red/green online indicator?
       # @socket.on 'connect_failed', -> Backbone.trigger 'app:status', 'Socket connect failed'
       # @socket.on 'disconnect', -> Backbone.trigger 'app:status', 'Socket disconnected'
