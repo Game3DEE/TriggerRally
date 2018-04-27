@@ -23,7 +23,7 @@ define [
     afterRender: ->
       do updateDriveButton = =>
         trackId = @app.root.track?.id
-        @$('.drivebutton').attr 'href', "/track/#{trackId}/drive" if trackId
+        @$('.drivebutton').attr 'href', "track/#{trackId}/drive" if trackId
       @listenTo @app.root, 'change:track.', updateDriveButton
 
       $userCredits = @$('.ca-credit.usercredits')

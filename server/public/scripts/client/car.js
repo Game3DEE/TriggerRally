@@ -50,7 +50,7 @@ function(THREE, util) {
     this.loadPartsJSON = function(meshes, callback) {
       var loader = new THREE.JSONLoader();
       var sceneLoader = new THREE.SceneLoader();
-      var texturePath = '/a/textures';
+      var texturePath = 'a/textures';
       async.parallel({
         body: function(cb) {
           if (meshes.body) {

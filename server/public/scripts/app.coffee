@@ -117,7 +117,7 @@ define [
       Backbone.on 'app:notfound', @notFound, @
 
       @checkUserLogin()
-      found = Backbone.history.start pushState: yes
+      found = Backbone.history.start()
       Backbone.trigger 'app:notfound' unless found
 
       unless @unifiedView.client.renderer
@@ -148,7 +148,7 @@ define [
       track.trigger 'change'
 
     checkUserLogin: ->
-      $.ajax('/TriggerRally/server/public/v1/auth/me')
+      $.ajax('v1/auth/me')
       .done (data) =>
         if data.user
           _gaq.push ['_setCustomVar', 1, 'User Type', 'Registered', 2]

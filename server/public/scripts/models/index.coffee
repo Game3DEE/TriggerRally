@@ -102,7 +102,7 @@
 
   class Collection extends Backbone.Collection
 
-  BASE_PATH = "/TriggerRally/server/public/v1/"
+  BASE_PATH = "v1/"
 
   class PathCollection extends Collection
     url: BASE_PATH + @path
