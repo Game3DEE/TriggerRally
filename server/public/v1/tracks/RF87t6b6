@@ -1,6 +1,6 @@
 {
 	"__v" : 0,
-	"_id" : ObjectId("51cd5e96de612e2be6000001"),
+	"_id" : "51cd5e96de612e2be6000001",
 	"config" : {
 		"scenery" : {
 			"woodenfence" : {
@@ -411,13 +411,13 @@
 	"count_drive" : 935286,
 	"count_fav" : 78,
 	"demo" : true,
-	"env" : ObjectId("506754342668a4626133ccd7"),
-	"modified" : ISODate("2013-07-01T21:19:29.738Z"),
+	"env" : "alps",
+	"modified" : "2013-07-01T21:19:29.738Z",
 	"name" : "Cliffhanger",
-	"next_track" : ObjectId("50fc447f6b90b54067000001"),
-	"parent" : ObjectId("50d3af01587b3b27ff000001"),
+	"next_track" : "50fc447f6b90b54067000001",
+	"parent" : "50d3af01587b3b27ff000001",
 	"prevent_copy" : false,
 	"pub_id" : "RF87t6b6",
 	"published" : false,
-	"user" : ObjectId("4f82ac71461ee1ae7100000c")
+	"user" : "me"
 }

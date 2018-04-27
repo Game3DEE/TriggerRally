@@ -1,5 +1,5 @@
 {
-	"_id" : ObjectId("502bb2555b4a4bdd0a544e1f"),
+	"_id" : "502bb2555b4a4bdd0a544e1f",
 	"config" : {
 		"mass" : 1350,
 		"scale" : 1,
@@ -24,21 +24,21 @@
 			]
 		},
 		"meshes" : {
-			"body" : "/a/meshes/car1-body.json",
-			"wheel" : "/a/meshes/car1-wheel.json"
+			"body" : "a/meshes/car1-body.json",
+			"wheel" : "a/meshes/car1-wheel.json"
 		},
 		"sounds" : {
-			"engine" : "/a/sounds/engine1.ogg",
+			"engine" : "a/sounds/engine1.ogg",
 			"engineRpm" : 7500,
-			"transmission" : "/a/sounds/gearwhine.ogg",
+			"transmission" : "a/sounds/gearwhine.ogg",
 			"transmissionRpm" : 600,
-			"wind" : "/a/sounds/wind.ogg",
+			"wind" : "a/sounds/wind.ogg",
 			"windSpeed" : 40,
 			"crash" : [
-				"/a/sounds/crash1.ogg",
-				"/a/sounds/crash2.ogg"
+				"a/sounds/crash1.ogg",
+				"a/sounds/crash2.ogg"
 			],
-			"skid" : "/a/sounds/scrape2.ogg"
+			"skid" : "a/sounds/scrape2.ogg"
 		},
 		"wheels" : [
 			{
@@ -236,5 +236,5 @@
 	},
 	"name" : "Arbusu G",
 	"pub_id" : "ArbusuG",
-	"user" : ObjectId("4f82ac71461ee1ae7100000c")
+	"user" : "4f82ac71461ee1ae7100000c"
 }
