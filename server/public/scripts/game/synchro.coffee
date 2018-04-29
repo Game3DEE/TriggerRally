@@ -93,7 +93,7 @@ define [
       pubsub = new utilPubsub.PubSub()
       @on = pubsub.subscribe.bind pubsub
 
-      game.on 'addvehicle', (vehicle, progress) =>
+      @game.on 'addvehicle', (vehicle, progress) =>
         unless vehicle.cfg.isRemote
           @_sendVehicleUpdates vehicle, progress
         return
@@ -103,13 +103,13 @@ define [
       @socket.on 'addcar', (data) ->
         { wireId, config } = data
         if config? and not progresses[wireId]?
-          game.addCarConfig config, (progress) ->
+          @game.addCarConfig config, (progress) ->
             progresses[wireId] = progress
 
       @socket.on 'deletecar', (data) ->
         { wireId } = data
         if progresses[wireId]?
-          game.deleteCar progresses[wireId]
+          @game.deleteCar progresses[wireId]
           delete progresses[wireId]
 
       @socket.on 's2c', (data) ->

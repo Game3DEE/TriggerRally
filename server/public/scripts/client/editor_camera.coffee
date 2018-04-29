@@ -13,8 +13,8 @@ define [
 
   class EditorCameraControl
     constructor: (@camera) ->
-      @pos = camera.position
-      @ang = camera.rotation
+      @pos = @camera.position
+      @ang = @camera.rotation
       @vel = new Vec3
       @velTarget = new Vec3
       @angVel = new Vec3

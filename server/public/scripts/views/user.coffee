@@ -17,7 +17,7 @@ define [
       @model?.fetch()
 
     template: (viewModel) ->
-      template = if @options.showStatus then templateWithStatus else templateBasic
+      template = if @options?.showStatus then templateWithStatus else templateBasic
       template viewModel
 
     viewModel: ->

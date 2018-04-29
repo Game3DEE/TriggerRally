@@ -5,7 +5,7 @@ moduleDef = (require, exports, module) ->
 
   class exports.StateSampler
     constructor: (@object, @keys, @freq = 1, @changeHandler) ->
-      @keyMap = generateKeyMap keys
+      @keyMap = generateKeyMap @keys
       @restart()
 
     restart: ->

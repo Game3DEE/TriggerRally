@@ -164,7 +164,7 @@ define [
       @meshArrow.position.set(0, 1, -2)
       @meshArrow2 = new THREE.Mesh(geom, mat2)
       @meshArrow2.position.set(0, 0, 0.8)
-      scene.add @meshArrow
+      @scene.add @meshArrow
       @meshArrow.add @meshArrow2
 
     destroy: ->
@@ -363,7 +363,7 @@ define [
     constructor: (@vehic, @client) ->
       @controllers = []
       @gamepadMap = {}
-      @controllers.push new KeyboardController vehic, client
+      @controllers.push new KeyboardController @vehic, @client
 
     update: (camera, delta) ->
       for gamepad, i in getGamepads()
@@ -556,7 +556,7 @@ define [
       @objects = {}
       @pubsub = new pubsub.PubSub()
 
-      prefs = root.prefs
+      prefs = @root.prefs
 
       @renderer = @createRenderer prefs
       @containerEl.appendChild @renderer.domElement if @renderer

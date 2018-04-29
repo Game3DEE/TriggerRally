@@ -21,7 +21,7 @@ define [
 
     # Points passed in will be modified (center will be subtracted).
     constructor: (@points) ->
-      @_centerPoints() if points
+      @_centerPoints() if @points
 
     clone: ->
       sl = new SphereList

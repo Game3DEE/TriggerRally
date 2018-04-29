@@ -162,10 +162,10 @@ define [
             @createReplayGame()
 
             @game.addCarConfig carModel.config, (@progress) =>
-              progress.on 'advance', => @advance()
+              @progress.on 'advance', => @advance()
 
-              obj1 = progress.vehicle.controller.input
-              obj2 = progress
+              obj1 = @progress.vehicle.controller.input
+              obj2 = @progress
               @rec1 = new recorder.StateSampler obj1, keys1, 20, @record_i
               @rec2 = new recorder.StateSampler obj2, keys2, 40, @record_p
               @game.sim.pubsub.on 'step', =>
@@ -290,7 +290,7 @@ define [
       @socket.emit 'times', { times }
 
     setTrackId: (@trackId) ->
-      track = models.Track.findOrCreate trackId
+      track = models.Track.findOrCreate @trackId
       track.fetch
         success: =>
           track.env.fetch
