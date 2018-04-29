@@ -43,7 +43,7 @@ require(
       , 'coffee-script': '../js/coffee-script'
       , 'backbone': '../js/backbone'  // -min
       , 'jade': '../js/require-jade'
-      , 'jquery': '../js/jquery-2.0.0'  // .min
+      , 'jquery': '../js/jquery-3.3.1'  // .min
       , 'underscore': '../js/underscore'  // -min
     }
   },
