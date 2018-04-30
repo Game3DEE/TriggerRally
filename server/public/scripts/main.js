@@ -1,6 +1,8 @@
 // Copyright (C) 2012 jareiko / http://www.jareiko.net/
 
 requirejs.config({
+  waitSeconds: 0, // disable load timeout; mobile seems to hit the timeout easily; findout better value?
+
   //baseUrl: '/scripts',
   shim: {
     'underscore': {
